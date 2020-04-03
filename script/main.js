@@ -1,6 +1,5 @@
 /************/
 /* A script for solving certain problems as defined in README.md
-
 /************/
 
 console.log('main.js is working')
