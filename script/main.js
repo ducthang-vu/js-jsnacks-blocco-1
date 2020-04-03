@@ -20,7 +20,7 @@ function longest_word_among_two(word_1, word_2) {
     }
 }
 
-function problem1() {}
+function problem1() {
     var word_1 = prompt('Enter first word')
     var word_2 = prompt('Enter second word')
 
