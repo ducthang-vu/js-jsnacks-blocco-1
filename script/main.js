@@ -5,6 +5,10 @@
 
 console.log('main.js is working')
 
+/****************/
+/*   FUNCTIONS  */
+/****************/
+
 /* 1 
 L’utente inserisce due parole in successione, con due prompt. Il software stampa la parola più lunga. Utilizza una funzione per determinare e ritornare la parola più lunga. */
 
@@ -90,6 +94,7 @@ function problem4() {
     console.table(array)
     console.log(sumIndexOdd_inArray(array))
 }
+
 
 
 /****************/
