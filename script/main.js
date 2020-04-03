@@ -32,6 +32,7 @@ function problem1() {
     var word_2 = prompt('Enter second word')
 
     console.log(longest_word_among_two(word_1, word_2))
+    message_to_user(longest_word_among_two(word_1, word_2), 'output-text') 
 }
 
 
@@ -51,6 +52,7 @@ function ifOdd_plus1(number) {
 function problem2() {
     var number = prompt('Enter number')
     console.log(ifOdd_plus1(number))
+    message_to_user(ifOdd_plus1(number), 'output-text') 
 }
 
 
@@ -73,6 +75,7 @@ function problem3() {
     var surnames = ['Forghieri', 'Papagni', 'Marazzini']
 
     console.log(randomNames(names, surnames))
+    message_to_user(randomNames(names, surnames), 'output-text') 
 }
 
 
@@ -93,6 +96,14 @@ function problem4() {
     var array = [1, 4, 2, 15, 120, 17, 3]
     console.table(array)
     console.log(sumIndexOdd_inArray(array))
+    message_to_user(sumIndexOdd_inArray(array), 'output-text') 
+}
+
+
+// UTILITIES FUNCTIONS
+function message_to_user(content, idElement) {
+    //A function accepting a var and HTML element ID, and adding such var as content of said HTML element
+    document.getElementById(idElement).innerHTML = content
 }
 
 
@@ -112,3 +123,7 @@ button1.addEventListener('click', problem1)
 button2.addEventListener('click', problem2)
 button3.addEventListener('click', problem3)
 button4.addEventListener('click', problem4)
+
+
+
+
