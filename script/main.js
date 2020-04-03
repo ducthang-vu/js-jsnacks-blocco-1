@@ -63,7 +63,6 @@ Generatore di “nomi cognomi” casuali: prendendo una lista di nomi (‘Michel
 
 function randomNames(names, surnames) {
     // A function accepting a array of names and a array of surnames and returning an array of 5 string combining randomly one name and one surname
-
     var invited_people = []
     var name 
     var surname 
@@ -75,6 +74,7 @@ function randomNames(names, surnames) {
     }
 
     return invited_people
+}
 
 function problem3() {
     var names = ['Michele', 'Fabio', 'Roberto']
