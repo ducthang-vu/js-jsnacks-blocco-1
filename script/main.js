@@ -12,7 +12,7 @@ console.log('main.js is working')
 L’utente inserisce due parole in successione, con due prompt. Il software stampa la parola più lunga. Utilizza una funzione per determinare e ritornare la parola più lunga. */
 
 function longest_word_among_two(word_1, word_2) {
-    // A function accepting two strings, and returning the longest or 0 if they are equally long; provided that empty spaces on both side of both strings are ignored. Return -1 if either parameter is not a string or is empty.
+    // A function accepting two strings, and returning the longest, or 0 if they are equally long; provided that empty spaces on both side of both strings are ignored. Return -1 if either parameter is not a string or is empty.
     if (typeof(word_1) != 'string' || typeof(word_2) != 'string' || !word_1 || !word_2) {return -1}   // validation
 
     if (word_1.trim().length > word_2.trim().length) {
@@ -25,8 +25,6 @@ function longest_word_among_two(word_1, word_2) {
 }
 
 function problem1() {
-    console.log('button1 pressed')
-
     var word_1 = prompt('Enter first word')
     var word_2 = prompt('Enter second word')
 
