@@ -3,6 +3,7 @@
 
 /************/
 
+console.log('main.js is working')
 
 /* 1 
 L’utente inserisce due parole in successione, con due prompt. Il software stampa la parola più lunga. Utilizza una funzione per determinare e ritornare la parola più lunga. */
@@ -21,6 +22,8 @@ function longest_word_among_two(word_1, word_2) {
 }
 
 function problem1() {
+    console.log('button1 pressed')
+
     var word_1 = prompt('Enter first word')
     var word_2 = prompt('Enter second word')
 
@@ -102,7 +105,7 @@ var button4 = document.getElementById('button4')
 
 
 // EVENTS
-button1.addEventListener('click', problem1())
-button2.addEventListener('click', problem2())
-button3.addEventListener('click', problem3())
-button4.addEventListener('click', problem4())
+button1.addEventListener('click', problem1)
+button2.addEventListener('click', problem2)
+button3.addEventListener('click', problem3)
+button4.addEventListener('click', problem4)
