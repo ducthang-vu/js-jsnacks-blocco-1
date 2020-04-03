@@ -62,15 +62,19 @@ function problem2() {
 Generatore di “nomi cognomi” casuali: prendendo una lista di nomi (‘Michele’, ‘Fabio’, ‘Roberto’) e una lista di cognomi (‘Forghieri’, ‘Papagni’, ‘Marazzini’), Gatsby vuole generare una falsa lista di 5 invitati. */
 
 function randomNames(names, surnames) {
-    // a function accepting two arrays of names and surnames, and returning an array of five strings, each combining randomly one name and one surname
-    var invited = []
-    
-    for (i = 1; i < 6; i++) {
-        invited.push(names[Math.floor(Math.random(names.length))] + ' ' + surnames[Math.floor(Math.random(surnames.length))])
+    // A function accepting a array of names and a array of surnames and returning an array of 5 string combining randomly one name and one surname
+
+    var invited_people = []
+    var name 
+    var surname 
+
+    for (i = 0; i < 6; i++) {
+        name = names[Math.floor(Math.random() * (names.length))]
+        surname = surnames[Math.floor(Math.random() * (surnames.length))]
+        invited_people.push(name + ' ' + surname)
     }
 
-    return invited
-}
+    return invited_people
 
 function problem3() {
     var names = ['Michele', 'Fabio', 'Roberto']
