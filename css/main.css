@@ -95,58 +95,21 @@ li {
 
 /* MAIN */
 main {
+    flex-direction: column;
     flex-grow: 1;
 }
 
 main > * {
     padding: 10px;
+}
+
+
+
+/* Main: ALL-PROBLEM-WRAPPER */
+.all-problems-wrapper .button {
     flex-basis: 50%;
 }
 
-.output {
-    margin-top: 10px;
-    padding: 5px;
-    border: 1px solid #fff;
-    width: 440px;
-}
-
-
-/* Main: PALINDROME-SECTION  */
-.palindrome-section .input-wrapper {
-    justify-content: center;
-    align-items: center;
-}
-
-.palindrome-section .input-wrapper button {
-    padding: 3px 5px;
-}
-
-.palindrome-section .input-wrapper input {
-    width: 400px;
-}
-
-.palindrome-section .output {
-    height: 62px;
-}
-
-/* Main: ODDSEVENS-SECTION */
-.oddsEvens-section .input-wrapper > * {
-    margin-bottom: 15px;
-    flex-basis: 100%;
-}
-
-.input-wrapper .button {
-    width: 80px;
-}
-
-.oddsEvens-section .input-box-inner {
-    display: inline-block;
-    margin: 5px;
-}
-
-.oddsEvens-section .output {
-    height: 113px;
-}
 
 /* FOOTER  */
 footer {
