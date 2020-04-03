@@ -42,17 +42,13 @@ function ifOdd_plus1(number) {
 }
 
 function problem2() {
-    var number = prompt('Enter first word')
+    var number = prompt('Enter number')
     console.log(ifOdd_plus1(number))
 }
 
 
 /* 3 
 Generatore di “nomi cognomi” casuali: prendendo una lista di nomi (‘Michele’, ‘Fabio’, ‘Roberto’) e una lista di cognomi (‘Forghieri’, ‘Papagni’, ‘Marazzini’), Gatsby vuole generare una falsa lista di 5 invitati. */
-
-var names = ['Michele', 'Fabio', 'Roberto']
-var surnames = ['Forghieri', 'Papagni', 'Marazzini']
-
 
 function randomNames(names, surnames) {
     // a function accepting two arrays of names and surnames, and returning an array of five strings, each combining randomly one name and one surname
@@ -63,6 +59,13 @@ function randomNames(names, surnames) {
     }
 
     return invited
+}
+
+function problem3() {
+    var names = ['Michele', 'Fabio', 'Roberto']
+    var surnames = ['Forghieri', 'Papagni', 'Marazzini']
+
+    console.log(randomNames(names, surnames))
 }
 
 
