@@ -1,0 +1,158 @@
+/* GENERAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+input {
+    padding: 5px;
+}
+
+
+li {
+    list-style: none;
+}
+
+/* UTILITIES */
+.black {
+    background: #000;
+}
+
+.big-text {
+    font-size: 130%;
+}
+
+.button {
+    padding: 15px;
+    font-size: 120%;
+}
+
+.container {
+    padding: 10px;
+    border: 2px solid #fff;
+}
+
+.flex-nw {
+    display: flex;
+}
+
+.flex-w {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.central {
+    margin: auto;
+}
+
+.green {
+    background: green;
+}
+
+.green-color {
+    color: green;
+}
+
+.red-color {
+    color: red;
+}
+
+.section-header {
+    margin-bottom: 15px;
+}
+
+.small-text {
+    font-size: 80%;
+}
+
+.white-color {
+    color: #fff;
+}
+
+
+/* APP */
+.app {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.app > * {
+    width: 100%;
+}
+
+/* HEADER */ 
+
+/* MAIN */
+main {
+    flex-grow: 1;
+}
+
+main > * {
+    padding: 10px;
+    flex-basis: 50%;
+}
+
+.output {
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #fff;
+    width: 440px;
+}
+
+
+/* Main: PALINDROME-SECTION  */
+.palindrome-section .input-wrapper {
+    justify-content: center;
+    align-items: center;
+}
+
+.palindrome-section .input-wrapper button {
+    padding: 3px 5px;
+}
+
+.palindrome-section .input-wrapper input {
+    width: 400px;
+}
+
+.palindrome-section .output {
+    height: 62px;
+}
+
+/* Main: ODDSEVENS-SECTION */
+.oddsEvens-section .input-wrapper > * {
+    margin-bottom: 15px;
+    flex-basis: 100%;
+}
+
+.input-wrapper .button {
+    width: 80px;
+}
+
+.oddsEvens-section .input-box-inner {
+    display: inline-block;
+    margin: 5px;
+}
+
+.oddsEvens-section .output {
+    height: 113px;
+}
+
+/* FOOTER  */
+footer {
+    font-style: italic;
+    font-size: 5px;
+    text-align: right;
+    padding: 0 15px 10px;
+    height: 28px;
+  }
