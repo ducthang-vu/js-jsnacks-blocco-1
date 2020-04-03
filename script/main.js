@@ -65,7 +65,7 @@ function randomNames(names, surnames) {
     // a function accepting two arrays of names and surnames, and returning an array of five strings, each combining randomly one name and one surname
     var invited = []
     
-    for (i = 5; i < 6; i++) {
+    for (i = 1; i < 6; i++) {
         invited.push(names[Math.floor(Math.random(names.length))] + ' ' + surnames[Math.floor(Math.random(surnames.length))])
     }
 
