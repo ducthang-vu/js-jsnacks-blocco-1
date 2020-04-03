@@ -39,7 +39,7 @@ Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero
 var number = prompt('Enter a number:') */
 
 function ifOdd_plus1(number) {
-    // A function accepting a number, and returning the same number if even, otherwise odd.
+    // A function accepting a number, and returning the same number if even, otherwise number + 1.
     if (number % 2) {
         return ++number
     } else {

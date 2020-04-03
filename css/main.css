@@ -104,8 +104,13 @@ main > * {
 }
 
 
+/* APP */
+.app {
+    height: 100vh
+}
 
 /* Main: ALL-PROBLEM-WRAPPER */
+
 .all-problems-wrapper .button {
     flex-basis: 50%;
 }
