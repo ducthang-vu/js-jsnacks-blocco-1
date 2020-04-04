@@ -48,7 +48,7 @@ function ifOdd_plus1(number) {
 }
 
 function problem2() {
-    var number = prompt('Enter number')
+    var number = prompt('Enter a number:')
     console.log(ifOdd_plus1(number))
     message_to_user(number, 'input-text') 
     message_to_user(ifOdd_plus1(number), 'output-text') 
