@@ -8,6 +8,14 @@ console.log('main.js is working')
 /*   FUNCTIONS  */
 /****************/
 
+/* UTILITIES FUNCTIONS */
+function message_to_user(content, idElement) {
+    //A function accepting a var and HTML element ID, and adding such var as content of said HTML element
+    document.getElementById(idElement).innerHTML = content
+}
+
+
+/* SOLVING PROBLEMS */
 /* 1 
 L’utente inserisce due parole in successione, con due prompt. Il software stampa la parola più lunga. Utilizza una funzione per determinare e ritornare la parola più lunga. */
 
@@ -105,13 +113,6 @@ function problem4() {
     console.log(sumIndexOdd_inArray(array))
     message_to_user(array, 'input-text') 
     message_to_user(sumIndexOdd_inArray(array), 'output-text') 
-}
-
-
-// UTILITIES FUNCTIONS
-function message_to_user(content, idElement) {
-    //A function accepting a var and HTML element ID, and adding such var as content of said HTML element
-    document.getElementById(idElement).innerHTML = content
 }
 
 
