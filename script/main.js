@@ -37,6 +37,8 @@ function problem1() {
     var word_2 = prompt('Enter second word')
 
     console.log(longest_word_among_two(word_1, word_2))
+
+    message_to_user('A function accepting two strings, and returning the longest, or 0 if they are equally long; provided that empty spaces on both side of both strings are ignored. <br> Return -1 if either parameter is not a string or is empty.', 'description-text')
     message_to_user(word_1 + '<br>' + word_2, 'input-text') 
     message_to_user(longest_word_among_two(word_1, word_2), 'output-text') 
 }
@@ -57,7 +59,10 @@ function ifOdd_plus1(number) {
 
 function problem2() {
     var number = prompt('Enter a number:')
+
     console.log(ifOdd_plus1(number))
+
+    message_to_user('A function accepting a number, and returning the same number if even, otherwise number + 1.', 'description-text')
     message_to_user(number, 'input-text') 
     message_to_user(ifOdd_plus1(number), 'output-text') 
 }
@@ -85,8 +90,10 @@ function problem3() {
     var names = ['Michele', 'Fabio', 'Roberto']
     var surnames = ['Forghieri', 'Papagni', 'Marazzini']
 
-    message_to_user(names + '<br>' + surnames, 'input-text') 
     console.log(randomNames(names, surnames))
+
+    message_to_user('A function accepting an array of names and an array of surnames and returning an array of 5 string combining randomly one name and one surname.', 'description-text')
+    message_to_user(names + '<br>' +  surnames, 'input-text') 
     message_to_user(randomNames(names, surnames), 'output-text') 
 }
 
@@ -111,6 +118,8 @@ function problem4() {
     var array = [1, 4, 2, 15, 120, 17, 3]
     console.table(array)
     console.log(sumIndexOdd_inArray(array))
+
+    message_to_user('A function accepting an array, and returning the sum of all elements of odd index position. <br> Return null if parameter is not an array.', 'description-text')
     message_to_user(array, 'input-text') 
     message_to_user(sumIndexOdd_inArray(array), 'output-text') 
 }
